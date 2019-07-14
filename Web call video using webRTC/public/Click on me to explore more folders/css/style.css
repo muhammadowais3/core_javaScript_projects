@@ -1,0 +1,11 @@
+*{
+    /* border: 2px red solid; */
+    background-color: rgba(207, 206, 206, 0.555);
+}
+
+
+.btn{
+    width: 47%;
+    display: inline;
+    margin: 10px 1.2%;
+}

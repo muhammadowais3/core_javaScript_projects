@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saylani mass training and job creation</title>
+    <style>
+    div{
+        width: 800px;
+        margin: 0px auto; 
+    }
+    input,select{
+        border-radius: 5px 5px;
+    }
+    #button
+    {
+        background: rgb(48, 63, 159);
+        width: 100px;
+        height: 40px;
+        color: antiquewhite;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div>
+    <img src="G:\theory\saylani/saylani-logo.png" alt="Saylani logo">
+     <h1>Saylani Mass Training & Job Creation</h1>
+     <h2>Registration / Entry Test Form (Only For Faisalabad Male Candidates)</h2>
+    <form action="http://smt-reg-herokuapp.com/" method="get"> 
+    <label for="Courses">Select your course* <br>  
+    <select name="course">
+        <option value="Web and mobile app">Web & Mobile Dev.</option>
+    </select>
+ </label>
+<br><br>
+    <label for="Batch">Select Batch* <br>  
+        <select name="Batch">
+            <option value="Batch" >2</option>
+        </select>
+        </label>
+<br><br> 
+  
+        <input type="text" size="120" maxlength="20" placeholder="Your Name*" required="required">
+       <br><br> Gender* <br>
+        <input type="radio" name="Gender" value="male" checked="checked"> Male
+        <input type="radio" name="Gender" value="female">Female <br><br>
+        <input type="text" name="CNIC" size="120" maxlength="11" placeholder="CNIC/B-Form"> <br><br>
+        <input type="text" name="Father Name" size="120" maxlength="50" placeholder="Father's name*"> <br><br>
+        <input type="text" name="Father/Guardian's CNIC" size="120" maxlength="11" placeholder="Father/Guardian's CNIC"> <br><br>
+        <input type="text" name="Address" size="120" maxlength="11" placeholder="Full and Permanent address"> <br><br>
+        <input type="text" name="Cell no" size="120" maxlength="11" placeholder="Cell Number*"> <br><br>
+        <input type="text" name="Email" size="120" maxlength="11" placeholder="Email*"> <br><br>
+        <label>Last Qualification* <br>
+            <input type="radio" name="Qualifications" value="None">
+            <label for="None">None</label>
+            <input type="radio" name="Qualifications" value="matric">
+            <label for="matric">Matric</label>
+            <input type="radio" name="Qualifications" value="Inter">
+            <label for="Intermediate">Intermediate</label>
+            <input type="radio" name="Qualifications" value="qualifications">
+            <label for="bachelor">Bachelor</label>
+            <input type="radio" name="Qualifications" value="bachelor">
+            <label for="Masters">Masters</label>
+            <input type="radio" name="Qualifications" value="masters">
+            <label for="phD">phD</label>
+        </label><br><br>
+        
+        <label for="Upload">Upload your recent image(face front, without glasses and with a single-colored backgroud)*
+          <br><br>  <input type="file" name="User's Pic"> <br> Only png or jpg with size < 1mb is allowed <br><br>
+          <p>
+            </label>
+             Declaration Undertaking*
+             <ol>
+                 <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by my all the establish and future regulation and policies of SWIT
+                   
+                 
+                    </li>
+                 <li> I hereby accept the responsibilites of the good conduct and guarantee that I will not be involved in any other activity, polical or ethic, but learning during my stay in the program.
+                    
+                   
+                 </li>
+                 <li>Defiance will render my admission cancelled at any point in time.
+                    </li>
+                 <li>Upon completion of course, I will complete the required project by SWIT.</li>
+             </ol> 
+        </p>
+         <label for="check"><input type="checkbox" name="agreed"> I agree with the above terms. <br>
+         </label>
+        </form>
+         <img src="G:\theory\saylani/untitled.png" alt="cAPTCHA"> <br><br>
+        <input type="submit" id="button"><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+    </body>
+</html>

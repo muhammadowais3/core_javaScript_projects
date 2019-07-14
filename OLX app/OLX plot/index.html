@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <title> OLX-Homepage</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBO4Q-ZSK7eZG1O71Qoam82r2Fwjn9gSd8",
+        authDomain: "olx-pakistan-2d6e3.firebaseapp.com",
+        databaseURL: "https://olx-pakistan-2d6e3.firebaseio.com",
+        projectId: "olx-pakistan-2d6e3",
+        storageBucket: "olx-pakistan-2d6e3.appspot.com",
+        messagingSenderId: "504019001296"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+
+  <body style="height:1500px; width: 1000px; margin: 0 auto">
+
+    <div class="container-fluid" style="width: 1000px; margin: 0 auto;">
+      <img src="images/1200px-Logo_of_OLX.svg.png" alt="olx-logo" style="height: 40px; width: 40px; margin: 10px; display : inline-block;">
+      <h4 style="display : inline; padding:10px; opacity: 0.7">Pakistan's Largest Marketplace</h4>
+
+
+      <div class="btn-group btn-group-lg" style="float: right; padding: 6px;">
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">My Account</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" >Submit an Ad</button>
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <nav class="navbar navbar-expand bg-dark navbar-dark" style="width: 1000px; margin: 0 auto; border-radius: 10px; opacity: 0.75">
+      <div style="margin: 0 auto">
+        <input class="form-control mr-sm-2 search" type="search" class="nav-link" placeholder="Search" style="display: inline;">
+
+        <button type="button" class="btn btn-info">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+        <div class="dropdown" style="float: right; padding-left: 20px ">
+          <button type="button" class="btn btn-primary dropdown-toggle Catagories" data-toggle="dropdown" class="nav-link">
+            Select Catagories
+          </button>
+          <div class="dropdown-menu" style="position: absolute">
+            <a class="dropdown-item" href="Vehicle.html">Vehicle</a>
+            <a class="dropdown-item" href="Electronics.html">Electronics</a>
+            <a class="dropdown-item" href="Mobile.html">Mobile</a>
+            <a class="dropdown-item" href="Furniture.html">Furniture</a>
+            <a class="dropdown-item" href="animals.html">Animals</a>
+            <a class="dropdown-item" href="Fashion.html">Fashion and Beauty</a>
+            <a class="dropdown-item" href="kids.html">Kids</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="container-fluid" style="margin: 0 auto">
+      <br>
+
+
+
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img">
+            <a href="animals.html">
+              <img src="images/animals.png" alt="card">
+
+          </div>
+          <div class="text">
+            <span>Animals</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="kids.html">
+              <img src="images/kids.png" alt="card">
+          </div>
+          <div class="text">
+            <span>kids</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="Vehicle.html">
+              <img src="images/cars.png" alt="card">
+          </div>
+          <div class="text">
+            <span>Vehicle</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="Electronics.html">
+              <img src="Images/electronics.png" alt="card">
+          </div>
+          <div class="text">
+            <span>Electronics</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="Fashion.html">
+              <img src="Images/fashion and beauty.png" alt="card">
+          </div>
+          <div class="text">
+            <span>Fashion And Beauty</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="Furniture.html">
+              <img src="images/furniture.png" alt="card">
+          </div>
+          <div class="text">
+            <span>Furniture</span>
+          </div>
+          </a>
+        </div>
+        <div class="card">
+          <div class="img">
+            <a href="Mobile.html">
+              <img src="Images/mobile.png" alt="card">
+          </div>
+          <div class="text">
+            <span>Mobile phones</span>
+          </div>
+          </a>
+        </div>
+
+      </div>
+      <hr>
+
+
+      <div class="footer">
+        <p>Footer</p>
+        <div class="row">
+          <div class="col-1">
+
+          </div>
+          <div class="col-2">
+            aadsfs
+          </div>
+          <div class="col-2">
+            div2
+          </div>
+          <div class="col-2">
+            div 3
+          </div>
+          <div class="col-2">
+            div 4
+          </div>
+          <div class="col-2">
+            div 5
+          </div>
+          <div class="col-1">
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Your Account Details</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div style="display: block">
+                You are currently signed out. Sign in to get access to it.
+
+
+
+
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Sign in</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">Sign up</button>
+              </div>
+              <div style="display: none">Unactivated</div>
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Your Account Details</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div style="display: block">
+              <h1 style="color: rgb(27, 100, 129); margin: 0 auto;">Submit an ad</h1>
+              
+    
+              <!-- Modal body -->
+              <div class="modal-body">
+                <div style="display: block" id="accountDetailModal">
+    
+                  <div class="form-group">
+                    <label for="Name">Name:</label>
+                    <input type="text" class="form-control" id="product-name" placeholder="Enter the name of the product" name="name of the product">
+                  </div>
+                  <div class="form-group">
+                    <label for="Catagory">catagory:</label>
+                    <!-- <input type="select" class="form-control" id="product-catagory" placeholder="Enter the name of the product" name="name of the product"> -->
+                    <select name="Catagory" id="product-catagory">
+                      <option value="electronics">Electronics</option>
+                      <option value="animal">Animal</option>
+                      <option value="kids">Kids</option>
+                      <option value="vehicle">Vehicle</option>
+                      <option value="fashion">Fashion and beauty</option>
+                      <option value="furniture">Furniture</option>
+                      <option value="Mobile">Mobile phones</option>
+                      
+                    </select>
+
+
+
+                  </div><div class="form-group">
+                    <label for="Description">Desription:</label>
+                    <input type="text" class="form-control" id="product-description" placeholder="Enter the Description of the product" name="name of the product">
+                  <div class="form-group">
+                    <label for="Model">Model:</label>
+                    <input type="text" class="form-control" id="product-model" placeholder="Enter the name of the product" name="name of the product">
+                  </div>
+                </div><div class="form-group">
+                  <label for="Image">Image:</label>
+                  <input type="file" class="form-control" id="product-image" placeholder="Enter the name of the product" name="name of the product">
+                </div>
+    
+                </div>
+                <div style="display: none" id="accountDetailModaltoggle">Unactivated</div>
+    
+              </div>
+
+
+
+            </div>
+            <div style="display: none">Unactivated</div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="adSubmit();">Submit</button>
+         
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Your Account Details</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div style="display: block" id="accountDetailModal">
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+
+            </div>
+            <div style="display: none" id="accountDetailModaltoggle">Unactivated</div>
+
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="login();">sign in</button>
+
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="modal fade" id="myModal3">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Your Account Details</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+
+            <div style="display: block">
+
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email1" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="password1" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-group">
+                <label for="username">User name:</label>
+                <input type="text" class="form-control" id="username1" placeholder="Enter your name" name="username">
+              </div>
+              <div class="form-group">
+                <label for="phonenumber">Contact Number:</label>
+                <input type="text" class="form-control" id="phone1" placeholder="Enter your contact number" name="contactno">
+              </div>
+              <div class="form-group form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+            </div>
+            <div style="display: none">Unactivated</div>
+
+          </div>
+
+
+
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="signup()">Sign up</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+
+    </div>
+    <script src="./app.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> `
+    <style>
+        body {
+            background: url("image.jpg");
+        }
+    </style>
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBSmH2G4gVTJFuTC0-LTpFfe0h5F3YfqiY",
+    authDomain: "owais-todo-app.firebaseapp.com",
+    databaseURL: "https://owais-todo-app.firebaseio.com",
+    projectId: "owais-todo-app",
+    storageBucket: "owais-todo-app.appspot.com",
+    messagingSenderId: "491003197567"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body>
+    <div class="container jumbotron">
+        <!--Name:
+    <input type="text" name="name" id="demo">-->
+        <h1 style="text-align: center">Today Plans..</h1>
+        <p title="Work to do Today" style="text-align: center"> Thing you wanna do today...</p>
+        <div class="input-group">
+            <!--<label for="demo">Name:</label>-->
+            <span class="input-group-addon" id="basic-addon1">Todo</span>
+            <input type="text" placeholder="Write Something...." class="form-control" id="demo">
+            <button type="button" class="btn btn-success" onclick="submitFunc()">Submit</button>
+        </div>
+        <!--<input type="submit" value="submit" onclick="submitFunc()">-->
+    </div>
+    <div class="container">
+        <ul id="parent" class="list-group">
+
+        </ul>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+
+</html>

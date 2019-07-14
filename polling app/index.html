@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="style.css">     -->
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAUbsz9msP76Z2uE2UQrjPN1qtmLc4Z-c4",
+      authDomain: "boiler-plate-56889.firebaseapp.com",
+      databaseURL: "https://boiler-plate-56889.firebaseio.com",
+      projectId: "boiler-plate-56889",
+      storageBucket: "boiler-plate-56889.appspot.com",
+      messagingSenderId: "782550274252"
+    };
+    firebase.initializeApp(config);
+  </script>
+</head>
+
+<body>
+
+  <label>Email:
+    <input type="email" name="email" id="email" />
+  </label>
+  <label>Password:
+    <input type="password" name="password" id="password" />
+  </label>
+  <label>Username:
+    <input type="text" name="username" id="username" />
+  </label>
+  <label>Phone:
+    <input type="text" name="phone" id="phone" />
+  </label>
+
+  <button onClick="signup()">Sign Up</button>
+
+  <div id="error"></div>
+  <!-- <form id="msform">
+      <!-- progressbar -->
+      <!-- <ul id="progressbar">
+        <li class="active">Account Setup</li>
+        <li>Social Profiles</li>
+        <li>Personal Details</li>
+      </ul>
+      <!-- fieldsets -->
+      <!-- <fieldset>
+        <h2 class="fs-title">Create your account</h2>
+        <h3 class="fs-subtitle">This is step 1</h3>
+        <input type="text" name="email" placeholder="Email" id="email"/>
+        <input type="password" name="pass" placeholder="Password" id="password"/>
+        <input type="password" name="cpass" placeholder="Confirm Password" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Social Profiles</h2>
+        <h3 class="fs-subtitle">Your presence on the social network</h3>
+        <input type="text" name="twitter" placeholder="Twitter" />
+        <input type="text" name="facebook" placeholder="Facebook" />
+        <input type="text" name="gplus" placeholder="Google Plus" />
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="button" name="next" class="next action-button" value="Next" />
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Personal Details</h2>
+        <h3 class="fs-subtitle">We will never sell it</h3>
+        <input type="text" name="fname" placeholder="First Name" />
+        <input type="text" name="lname" placeholder="Last Name" />
+        <input type="text" name="phone" placeholder="Phone" />
+        <textarea name="address" placeholder="Address"></textarea>
+        <input type="button" name="previous" class="previous action-button" value="Previous" />
+        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+      </fieldset>
+    </form>  -->
+  <script src="app.js"></script>
+</body>
+
+</html>
+
+
+<!-- .login
+  %h2 Register
+  %input{:name => "username", :placeholder => "Username", :type => "text"}
+  %input#pw{:name => "password", :placeholder => "Password", :type => "password"}
+  %input{:name => "email", :placeholder => "E-Mail Address", :type => "text"}
+  .agree
+    %input#agree{:name => "agree", :type => "checkbox"}
+    = succeed "Accept rules and conditions" do
+      %label{:for => "agree"}
+  %input{:type => "submit",:class => "animated", :value => "Register"}
+  %a.forgot{:href => "#"} Already have an account? -->

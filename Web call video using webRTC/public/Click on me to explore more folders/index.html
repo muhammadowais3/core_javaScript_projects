@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <title>Fyp Application</title>
+</head>
+<!-- <body onload="testjs();"> -->
+    <body>
+        
+    
+    <div style="margin-bottom: 20px"> 
+        <!-- green button -->
+        <button type="button" class="btn btn-danger" onclick="red()">Send RED</button>
+        <!-- red button -->
+        <button type="button" class="btn btn-success" onclick="green()">Send GREEN</button> 
+        
+    </div>
+    <!-- <div id="videoCanvas">
+        <video id="camera" autoplay playsinline></video>
+        <canvas id="photo"></canvas>
+      </div>
+
+      <div id="buttons">
+        <button id="snap">Snap</button><span> then </span><button id="send">Send</button>
+        <span> or </span>
+        <button id="snapAndSend">Snap &amp; Send</button>
+      </div>
+    
+      <div id="incoming">
+        <h2>Incoming photos</h2>
+        <div id="trail"></div>
+      </div> -->
+
+
+
+    <div style="margin-top: 20px">
+
+        <button type="button" class="btn btn-primary" onclick="start()" id="startButton">Start</button>
+        <button type="button" class="btn btn-secondary" onclick="exit()" id="closeButton">Exit</button>
+    
+    </div>
+    
+    <textarea name="extra" id="dataChannelReceive" cols="30" rows="10" style="visibility: hidden"></textarea>
+    
+    <!-- <script src="/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="js/script.js"></script>-->
+
+
+    
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCQD33-sJ35mux6nJl08uSxxpINV99lA5Q",
+    authDomain: "fyp-application-6d43d.firebaseapp.com",
+    databaseURL: "https://fyp-application-6d43d.firebaseio.com",
+    projectId: "fyp-application-6d43d",
+    storageBucket: "fyp-application-6d43d.appspot.com",
+    messagingSenderId: "782050052407"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="js/main.js"></script> 
+</body>
+</html>
