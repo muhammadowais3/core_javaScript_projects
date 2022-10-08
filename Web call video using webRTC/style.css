@@ -1,0 +1,13 @@
+#live-streaming{
+    border: 2px solid red;
+    width: 90%;
+    height: 600px;
+    margin: 40px auto;
+    
+}
+
+#main_container{
+    border: 20px double blue;
+    margin: 0px auto;
+    
+}
